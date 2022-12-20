@@ -34,10 +34,24 @@ private slots:
 
     void on_NUM_CLEAR_clicked();
 
+    void on_BUT_MINUS_clicked();
+
+    void on_BUT_PLUS_clicked();
+
+    void on_BUT_MUTI_clicked();
+
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     char  input_num;
     QString curr_display = "";
+    QString exp_total = "";
+    QString exp_curr = "";
+    float exp_total_f = 0;
+    float exp_curr_f = 0;
+    int judge_dot(QString exp_str);
+    int judge_zero(QString exp_str);
 };
 
 #endif // MAINWINDOW_H
